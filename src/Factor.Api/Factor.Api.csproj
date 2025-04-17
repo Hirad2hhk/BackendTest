@@ -9,6 +9,7 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="14.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.4" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="8.1.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="8.1.1" />
   </ItemGroup>
@@ -16,6 +17,12 @@
   <ItemGroup>
     <ProjectReference Include="..\Factor.Application\Factor.Application.csproj" />
     <ProjectReference Include="..\Factor.Infrastructure\Factor.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Factor.Persistence.Entities">
+      <HintPath>bin\Debug\net9.0\Factor.Persistence.Entities.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# 
+#
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{32330819-D7CA-45EC-8825-C60F3BE1934B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factor.Api", "src\Factor.Api\Factor.Api.csproj", "{8CF7A7B0-A9F8-4C50-A4E9-EC683A67FD29}"
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factor.Infrastructure", "src\Factor.Infrastructure\Factor.Infrastructure.csproj", "{BE9A9439-5DDA-4FC4-A7A2-0DA87ACB8DBF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factor.Persistence.Entities", "src\Factor.Persistence.Entities\Factor.Persistence.Entities.csproj", "{51B03C53-F1BD-4A6E-A7D0-228E3B7129DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factor.Tests", "src\Factor.Tests\Factor.Tests.csproj", "{D358D2ED-E2B8-4E67-BB32-CD2576C85F55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{51B03C53-F1BD-4A6E-A7D0-228E3B7129DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51B03C53-F1BD-4A6E-A7D0-228E3B7129DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51B03C53-F1BD-4A6E-A7D0-228E3B7129DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D358D2ED-E2B8-4E67-BB32-CD2576C85F55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D358D2ED-E2B8-4E67-BB32-CD2576C85F55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D358D2ED-E2B8-4E67-BB32-CD2576C85F55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D358D2ED-E2B8-4E67-BB32-CD2576C85F55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8CF7A7B0-A9F8-4C50-A4E9-EC683A67FD29} = {32330819-D7CA-45EC-8825-C60F3BE1934B}

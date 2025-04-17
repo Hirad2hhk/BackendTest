@@ -27,7 +27,7 @@ public class ProductController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Post([FromBody] ProductDto dto)
+    public async Task<IActionResult> Post([FromBody] CreateProductDto dto)
     {
         var id = await _repo.CreateAsync(dto);
         return CreatedAtAction(nameof(Get), new { id }, null);
@@ -46,5 +46,10 @@ public class ProductController : ControllerBase
     {
         var deleted = await _repo.DeleteAsync(id);
         return deleted ? NoContent() : NotFound();
+    }
+    [HttpGet("search")]
+    public async Task<IActionResult> Search([FromQuery] string? code, [FromQuery] string? name)
+    {
+        return Ok(await _repo.SearchAsync(code, name));
     }
 }

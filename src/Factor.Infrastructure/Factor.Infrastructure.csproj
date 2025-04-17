@@ -21,4 +21,10 @@
     <ProjectReference Include="..\Factor.Domain\Factor.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Factor.Persistence.Entities">
+      <HintPath>..\Factor.Api\bin\Debug\net9.0\Factor.Persistence.Entities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
